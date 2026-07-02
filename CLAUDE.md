@@ -18,8 +18,10 @@ Design assets live in `img/`. Only `banner.png`, `fietsen_trans.png`, and `spron
 
 `npx serve .` from this folder. The tile links point at the **production** relative paths (`/de-sprong`, `/fietsen`), so they'll 404 locally unless De Sprong/Fietsen happen to be reachable at those exact paths — same trade-off Fietsen's Part 1 documents. To test a link locally, temporarily point it at whatever port that app's dev server is using (e.g. `http://localhost:5173/de-sprong` for De Sprong's `vite dev`).
 
-## Deploy plan (Coolify) — not yet done
+## Deploy (Coolify) — done, live at `bier-en-brood.nl`
 
-- New Application, Build Pack `Static`, Base/Publish directory `.` (repo root — no subpath, so none of Fietsen's Nginx alias/`<base>` workarounds are needed)
-- Repo is public, connect via GitHub App (no deploy key needed, unlike Fietsen's private repo)
-- Assign the domain root `bier-en-brood.nl` (no path prefix)
+- Application: Build Pack `Static`, Base/Publish directory `.` (repo root — no subpath, so none of Fietsen's Nginx alias/`<base>` workarounds are needed)
+- Repo is public, connected via GitHub App (no deploy key needed, unlike Fietsen's private repo)
+- Domain: `https://bier-en-brood.nl` (bare, no path prefix)
+
+**Gotcha hit during setup**: the domain root was briefly owned by the De Sprong app (its Domains field had no `/de-sprong` path suffix), so it caught every unmatched request including `/`. Fixed by scoping De Sprong's domain to `https://bier-en-brood.nl/de-sprong` first, freeing the root for Home. See `../Fietsen/CLAUDE.md` for the full story, including the Coolify "Strip Prefixes" bug that briefly broke De Sprong after that change.
