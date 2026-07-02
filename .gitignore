@@ -1,0 +1,9 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Working/source image files not used by the site directly
+img/Backup/
+img/\[Originals\]/
+img/banner_groot.png
+img/Strange Brew Logo - transparant.png
