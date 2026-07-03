@@ -8,15 +8,16 @@ This is **Home**, the landing page for `bier-en-brood.nl`. It's one of three sib
 
 ## What this is
 
-A single static page, no build step, no framework: `index.html` + `style.css`, plain HTML/CSS. It shows the "Bier & Brood" banner and two large tiles that link out to the other two apps:
+A single static page, no build step, no framework: `index.html` + `style.css`, plain HTML/CSS. It shows the "Bier & Brood" banner and three large tiles that link out to the other sibling apps:
 - "De Sprong" → `/de-sprong`
 - "Fietsen" → `/fietsen`
+- "Strange Brew dashboard" → `/strangebrew/`
 
-Design assets live in `img/`. Only `banner.png`, `fietsen_trans.png`, and `sprong_klein_trans.png` are used by the page and tracked in git — `img/Backup/`, `img/[Originals]/`, `banner_groot.png`, and the standalone Strange Brew logo are working/source files, gitignored.
+Design assets live in `img/`. Only `banner.png`, `fietsen_trans.png`, `sprong_klein_trans.png`, and `Strange Brew - logo.png` are used by the page and tracked in git — `img/Backup/`, `img/[Originals]/`, `banner_groot.png`, and the older standalone Strange Brew logo (`Strange Brew Logo - transparant.png`) are working/source files, gitignored.
 
 ## Local dev
 
-`npx serve .` from this folder. The tile links point at the **production** relative paths (`/de-sprong`, `/fietsen`), so they'll 404 locally unless De Sprong/Fietsen happen to be reachable at those exact paths — same trade-off Fietsen's Part 1 documents. To test a link locally, temporarily point it at whatever port that app's dev server is using (e.g. `http://localhost:5173/de-sprong` for De Sprong's `vite dev`).
+`npx serve .` from this folder. The tile links point at the **production** relative paths (`/de-sprong`, `/fietsen`, `/strangebrew/`), so they'll 404 locally unless those apps happen to be reachable at those exact paths — same trade-off Fietsen's Part 1 documents. To test a link locally, temporarily point it at whatever port that app's dev server is using (e.g. `http://localhost:5173/de-sprong` for De Sprong's `vite dev`).
 
 ## Deploy (Coolify) — done, live at `bier-en-brood.nl`
 
