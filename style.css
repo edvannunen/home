@@ -27,14 +27,17 @@ a{color:inherit;}
 
 .banner img{margin:0 auto; height:auto;}
 
-.wrap{max-width:1620px; margin:0 auto; padding:24px 24px 80px; text-align:center;}
+.wrap{max-width:2020px; margin:0 auto; padding:24px 24px 80px; text-align:center;}
 
 .tiles{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(5,1fr);
   gap:24px;
 }
-@media (max-width:1200px){
+@media (max-width:1500px){
+  .tiles{grid-template-columns:repeat(3,1fr);}
+}
+@media (max-width:900px){
   .tiles{grid-template-columns:1fr 1fr;}
 }
 @media (max-width:600px){
