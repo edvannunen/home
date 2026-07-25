@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Context
 
-This is **Home**, the landing page for `bier-en-brood.nl`. It's one of three sibling projects deployed on the same Hetzner + Coolify server — see `../Fietsen/CLAUDE.md` for the full family overview (De Sprong, Fietsen, Home) and shared decisions (path-based routing, local dev conventions, the planned shared-login gate in Part 3).
+This is **Home**, the landing page for `bier-en-brood.nl`. It's one of three sibling projects deployed on the same Hetzner + Coolify server — see `../Fietsen/CLAUDE.md` for the full family overview (De Sprong, Fietsen, Home) and shared decisions (path-based routing, local dev conventions, the planned shared-login gate in Part 3), and `../Coolify Hosting Playbook.md` for the full per-project Coolify deployment reference.
 
 ## What this is
 
