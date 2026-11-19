@@ -8,10 +8,16 @@ This is **Home**, the landing page for `bier-en-brood.nl`. It's one of three sib
 
 ## What this is
 
-A single static page, no build step, no framework: `index.html` + `style.css`, plain HTML/CSS. It shows the "Bier & Brood" banner and three large tiles that link out to the other sibling apps:
+A single static page, no build step, no framework: `index.html` + `style.css`, plain HTML/CSS. It shows the "Bier & Brood" banner and large tiles (3-column grid) that link out to the other sibling apps, in this order:
 - "De Sprong" → `/de-sprong`
+- "1001 Albums" → `/1001albums`
 - "Fietsen" → `/fietsen`
-- "Strange Brew dashboard" → `/strangebrew/`
+- "Quiz" → `/quiz/` (image `img/quiz_klein.png`, trimmed + scaled from the gitignored source `img/quiz.png`)
+- "Strange Brew" → `/strangebrew/`
+- "Brood met Clau" → `/brood/`
+- "Snob 2000" → `/snob2000/`
+
+Tile images are shown at most 220px tall (`.tile-art`); make new ones about 440px tall (sharp on phones), transparent PNG.
 
 Design assets live in `img/`. Only `banner.png`, `fietsen_trans.png`, `sprong_klein_trans.png`, and `Strange Brew - logo.png` are used by the page and tracked in git — `img/Backup/`, `img/[Originals]/`, `banner_groot.png`, and the older standalone Strange Brew logo (`Strange Brew Logo - transparant.png`) are working/source files, gitignored.
 
